@@ -62,10 +62,13 @@ void ErrorDialog::ShowMessage(const QString &message) {
 
   current_messages_ << message;
   UpdateContent();
-
+/*
   show();
   raise();
   activateWindow();
+*/
+  current_messages_.clear();
+  UpdateContent();
 
 }
 
